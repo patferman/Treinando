@@ -1,0 +1,13 @@
+corretor  = input ('nome do corretor:   ')
+qtdade_imoveis = int(input(f'Quantos imóveis foram vendidos:   '))
+total_vendas = float(input(f'Valor total das vendas:   '))
+
+fixo_remun = 1500
+comissao_fixo = qtdade_imoveis * 200
+comissao_flut = total_vendas * 0.05
+
+salario = ((fixo_remun) + (comissao_fixo) + (comissao_flut))
+
+print(f'O salário final do corretor {corretor} é R$ {salario:.2f}')
+
+                                      
