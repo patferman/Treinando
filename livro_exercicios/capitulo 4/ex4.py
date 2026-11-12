@@ -2,19 +2,17 @@
 nome = 'Patricia'
 erros = 0
 
-while erros < 3:
-    senha = int(input("Senha: "))
+while erros < 4:
+    senha = int(input('digite a senha: '))
+
     if senha == 123456:
-        print(f"Olá, {nome}! Seja bem-vindo ao nosso banco!")
+        print(f'Olá, {nome}. Benvindo ao nosso banco.')
         break
     else:
-        # Houve erro
-        erros += 1
-        # Ainda há tentativas
+        erros +=1
         if erros < 3:
-            # O comando "3 - erros" significa 3 tentativas - a quantidade de erros
-            print(f"Senha incorreta! Você ainda tem {3 - erros} tentativa(s).")
-        else:
-            print("Sua senha foi bloqueada! Por favor, dirija-se a um de nossos caixas.")
-            break
-   
+            print('você só tem 3 tentativas. Depois, a senha será bloqueada.')
+
+else:
+    print("senha bloqueada")      
+
