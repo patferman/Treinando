@@ -1,15 +1,25 @@
 #informar se o cliente pode pedir o emprestimo. 
 
-nomenegativado = input("Seu nome está negativo? ")
+print('Digite 1 - se sim, ou 2 - se não:  ')
+
+""" precisa colocar o int aqui - sem o int, o numero digitado é considerado string, e não é comprendido no if - else"""
+
+nomenegativado = int(input("Seu nome está negativo? "))
+
 if nomenegativado == 1:
-    print("Emprestimo negado")
+    print("emprestimo negado")
+
 else:
-    carteiraassinada =  input("digite 1 - se sim, ou 2 - se não")
+    carteiraassinada =  int(input("Possui carteira assinada?"))
 if carteiraassinada == 2:
     print("emprestimo negado")
 else:
-    casapropria =  input("digite 1 - se sim, ou 2 - se não")
-if casapropria == 0:
-    print('Empretimo negado')
+    casapropria =  int(input("Tem casa propria?"))
+
+if casapropria == 2:
+    print('Emprestimo negado')
 else:
-    print('empresstimo concedido')        
+    print('emprestimo concedido')
+
+
+        
