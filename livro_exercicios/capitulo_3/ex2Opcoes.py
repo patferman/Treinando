@@ -14,9 +14,10 @@ quadrado = (numero1 + numero2) * (numero1 + numero2)
 """calcular o cubo do menor numero"""
 
 menor = min(numero1, numero2)
-cubo = menor
+cubo = menor ** 3
 
 print(f'A média ponderada é {media}')
 
 print (f' O quadrado é {quadrado}')
 
+print (f' O cubo de {menor} é {cubo}')
